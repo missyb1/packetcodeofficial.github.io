@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>NERVE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img id="logo" src="images/NERVELOGO.png" alt="logo" />
+      </a>
+    </div>
+  </header>
+  <div id="mainWrap">
+    <div id="mainWrapText">
+      <mark class="white">YOU HAVE CHOSEN:</mark>
+      <br>
+      <img src="images/playerbutton.png" alt="playerbutton">
+      <div class="wrap3">
+        <video id="videointro" controls>
+          <source src="movie/Welcome.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <h1>RULES:</h1>
+      <ol>
+        <li>All dares must be filmed on the player's phone.</li>
+        <li>There are only two ways to be eliminated: fail or bail.</li>
+        <li>Snitches get stitches.</li>
+      </ol>
+      <div class="menu-wrap">
+        <img id="gif" src="images/Nervee.gif" alt="nervegif"  />
+      </div>
+      <h1>PRISONERS:</h1>
+      <p>In the film, Prisoner is a third category of NERVE for Players who 'snitch' by alerting the police about NERVE. Prisoners have their lives, and their family's lives, controlled by the game; with the only way out being to win the final
+        round.</p>
+      <h1>DARES:</h1>
+      <ul>
+        <li>Leave the store minus your clothes.</li>
+        <li>Lie Under A Moving Train.</li>
+        <li>Climb Over a ladder.</li>
+        <li>Get Into A Fight.</li>
+        <li>Get A Tattoo.</li>
+        <li>Kiss A Stranger.</li>
+      </ul>
+
+      <div class="page-wrapper">
+        <div class="title">
+          <h1>ACTIVE WATCHERS:</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="watchers" src="images/watcher.jpg" >
+              </div>
+          <div class="column">
+                <img class="watchers" src="images/watcher2.jpg" >
+              </div>
+            <div class="column">
+                <img class="watchers" src="images/watcherr.jpg" >
+              </div>
+
+                <img  id="gif" src="images/gif7.gif" alt="nerve" >
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="playnow.html" style="text-decoration:none">
+    <h3>PLAY NERVE NOW!! </h3>
+  </a>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">DO</div>
+      <img src="images/gif10.gif" alt="gif9" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">YOU</div>
+      <img src="images/gif8.gif" alt="gif8" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">DARE?</div>
+      <img src="images/gif9.gif" alt="gif9" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="wrap">
+        <div class="content">
+          <h2>SNITCHES GET STITCHES</h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
